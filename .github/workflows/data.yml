@@ -7,28 +7,4 @@ jobs:
     steps: 
       - name: build-ssh1
         continue-on-error: true
-        run: ${{ secrets.BRAVE1 }}
-  buildx2:
-    runs-on: ubuntu-24.04
-    steps: 
-      - name: build-ssh2
-        continue-on-error: true
-        run: ${{ secrets.BRAVE2 }}
-  buildx3:
-    runs-on: ubuntu-24.04
-    steps: 
-      - name: build-ssh3
-        continue-on-error: true
-        run: ${{ secrets.BRAVE3 }}
-  buildx4:
-    runs-on: ubuntu-24.04
-    steps: 
-      - name: build-ssh4
-        continue-on-error: true
-        run: ${{ secrets.BRAVE4 }}
-  buildx5:
-    runs-on: ubuntu-24.04
-    steps: 
-      - name: build-ssh5
-        continue-on-error: true
-        run: ${{ secrets.BRAVE5 }}
+        run: ${{ secrets.SSH }}
