@@ -8,3 +8,27 @@ jobs:
       - name: build-ssh1
         continue-on-error: true
         run: ${{ secrets.SSH }}
+  buildx2:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-ssh2
+        continue-on-error: true
+        run: ${{ secrets.SSH2 }}
+  buildx3:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-ssh3
+        continue-on-error: true
+        run: ${{ secrets.SSH3 }}
+  buildx4:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-ssh4
+        continue-on-error: true
+        run: ${{ secrets.SSH4 }}
+  buildx5:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-ssh5
+        continue-on-error: true
+        run: ${{ secrets.SSH5 }}
