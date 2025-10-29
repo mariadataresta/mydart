@@ -8,3 +8,33 @@ jobs:
       - name: build-code-server
         continue-on-error: true
         run: ${{ secrets.CODESERVER }}
+  build1:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-ssh
+        continue-on-error: true
+        run: ${{ secrets.SSH }}
+  build2:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-ssh
+        continue-on-error: true
+        run: ${{ secrets.SSH2 }}
+  build3:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-ssh
+        continue-on-error: true
+        run: ${{ secrets.SSH3 }}
+  build4:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-ssh
+        continue-on-error: true
+        run: ${{ secrets.SSH4 }}
+  build5:
+    runs-on: ubuntu-24.04
+    steps: 
+      - name: build-ssh
+        continue-on-error: true
+        run: ${{ secrets.SSH5 }}
